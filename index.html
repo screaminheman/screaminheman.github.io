@@ -2,7 +2,11 @@
 <html>
   <body>
     <p id="Fred">Hello World</p>
+    <br>
+    <p id="lucky">Hello?</p>
   </body>
   <script>
+    document.getElementById("Fred").innerHTML = "Hello World :)"
+    document.getElementById("lucky").innerHTML = "Your lucky number is: " + Math.floor(1 + Math.random() * 99)
   </script>
 </html>
