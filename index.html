@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-AU">
+  <head>
+    <!-- for multiple pages CSS: <link rel="stylesheet" href="path.css"> -->
+    <style>
+      h1 {color:blue}
+    </style>
+  </head>
   <body>
-    <p id="Fred">Hello World</p>
+    <h1 style="text-align:center"> <i>Web Page</i> Title </h1>
+    <p id="Fred" title="Tooltip!">Hello World</p>
+    <p><i>(Bonjour <span style="color:green">le monde)</span></i>
     <br>
+    <div style="background-color:powderblue">
     <p id="lucky">Hello?</p>
+    </div>
     <br>
-    <img src="/king.ppm" width="500" height="500" alt="Image didn't work!">
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/55px-SNice.svg.png" 
+      width="50" height="50"
+      alt="Image didn't work!">
   </body>
   <script>
     document.getElementById("Fred").innerHTML = "Hello World :)"
     document.getElementById("lucky").innerHTML = "Your lucky number is: " + Math.floor(1 + Math.random() * 99)
   </script>
 </html>
+
