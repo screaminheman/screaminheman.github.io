@@ -1,30 +1,38 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Title here?</title>
 <html lang="en-AU">
   <head>
     <!-- for multiple pages CSS: <link rel="stylesheet" href="path.css"> -->
     <style>
-      h1 {color:blue}
+      h1 {color:blue; font-size:5vw}
+      .classy {background-color:yellow}
     </style>
   </head>
   <body>
     <h1 style="text-align:center"> <i>Web Page</i> Title </h1>
-    <p id="Fred" title="Tooltip!">Hello World</p>
+    <p id="Fred" title="Tooltip!">Hello World  (<a href="#kingpic">go jump?</a> )</p>
     <p><i>(Bonjour <span style="color:green">le monde)</span></i>
     <br>
     <div style="background-color:powderblue">
     <p id="lucky">Hello?</p>
     </div>
     <br>
-    <img 
+    <img id="smiley"
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/55px-SNice.svg.png" 
       width="50" height="50"
       alt="Image didn't work!">
     <br>
     <p>Will this open the Home page? </p>
     <a href="home.html">Linkaroo</a>
+    <p class="classy"> Yep,  and what about using an image as a link?</p>
+    <a href="kingly.html"><img id="kingpic" src="king.jpg" alt="Jpeg here" width = 50% /></a>
   </body>
   <script>
     document.getElementById("Fred").innerHTML = "Hello World :)"
     document.getElementById("lucky").innerHTML = "Your lucky number is: " + Math.floor(1 + Math.random() * 99)
+    // can getElementsByClassName("name")
   </script>
 </html>
+
