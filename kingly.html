@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+  <body>
+    <p>Try Kingly here</p>
+  </body>
 <body>
 <p>Try Kingly here</p><br>
 <form action="testination.html">
@@ -11,7 +14,15 @@
   <input type="radio" id="easy" name="difficulty" value="easy">
   <label for="easy">Easy</label><br>
   <br>
-  <input type="submit" value="sbmt">
+  <input type="submit" value="sbmt" id="submitButton">
+  <script>
+    submitButton.addEventListener("click", testScript)
+    function testScript{
+      if getElementById("hard").checked {
+        window.alert("Hard chosen")
+      }
+    }
+  </script>
 </form>
 </body>
 </html>
